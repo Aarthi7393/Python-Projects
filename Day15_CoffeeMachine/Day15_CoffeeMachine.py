@@ -65,8 +65,8 @@ def collect_money(cost):
 
 # TODO 4: Check if sufficient resource available
 def check_resources(user_resource):
-    print(user_resource)
-    print(resources)
+    #print(user_resource)
+    #print(resources)
 
     for key in resources:
         if resources[key] < user_resource[key]:
@@ -103,7 +103,8 @@ while is_machine_on:
     else:
         user_resource = MENU[user_choice]["ingredients"]
         if check_resources(user_resource):
-            print("Resource available")
+            #print("Resource available")
+            #print("Resource available")
             print(f"The cost of the drink is ${MENU[user_choice]["cost"]}")
             if collect_money(float(MENU[user_choice]["cost"])):
                 profit += float(MENU[user_choice]["cost"])
