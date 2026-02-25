@@ -36,10 +36,11 @@ def create_csv(missed_states):
 
 
 
+screen.listen()
 
 guessed_state =[]
 while len(guessed_state) < 31:
-    screen.listen()
+    screen.tracer(1)
     user_answer = screen.textinput(title=f"{len(guessed_state)} / 31 State ",prompt="State Name of this country?").lower()
 
     if user_answer == "exit":
