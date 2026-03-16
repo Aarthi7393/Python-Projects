@@ -1,0 +1,50 @@
+        # self.param={
+        #     "departure_id": DEPARTURE,
+        #     "arrival_id": ARRIVAL,
+        #     "currency" : currency,
+        #     "type" : fly_type,
+        #     "max_price" : max_price,
+        #     "engine" : engine,
+        #     "api_key" : api_key,
+        #     "outbound_date": from_time,
+        #     "return_date": to_time,
+        #     #"sort_by" :"2"
+        # }
+        # search = GoogleSearch(self.param)
+        # results = search.get_dict()
+        # # print(results)
+        # best_flight = results["best_flights"][0]
+        # best_price = best_flight["price"]
+        # total_duration= best_flight["total_duration"]/60
+        # departure_token = best_flight["departure_token"]
+        #
+        # departure_time = best_flight["flights"][0]["departure_airport"]["time"]
+        # #arrival_time = "arrival"
+        # arrival_time = best_flight["flights"][len(best_flight["flights"])-1]["arrival_airport"]["time"]
+        # # print(best_flight)
+        # # print(best_price)
+        # # print(total_duration)
+        # # print(departure_time)
+        # # print(arrival_time)
+        #
+        #
+        # layover_str = "no layover"
+        # if "layovers" in best_flight and best_flight["layovers"]:
+        #     layover_str = ""
+        #     for lo in best_flight["layovers"]:
+        #         layover_str += f'{lo["id"]} --> '
+        # # print(layover_str)
+        # # print(f"Price from {DEPARTURE} -> {ARRIVAL} through {layover_str}"
+        # #       f"in price {best_price}")
+        # # print(f"Departure from {DEPARTURE}  @ {departure_time} and arrival at {ARRIVAL} @ {arrival_time} ")
+        # #print("Return ")
+        #
+        # params = {
+        #     "engine": "google_flights",
+        #     "departure_token": departure_token,
+        #     "api_key": "4705e1f86580507a115dc7f23c7a9f356752dcce3707bed8c94188cf431432a2",
+        # }
+        #
+        # response = requests.get(SEARCH_URL, params=params)
+        # full_itinerary = response.json()
+        # print(full_itinerary)
